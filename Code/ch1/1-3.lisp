@@ -1,0 +1,10 @@
+(define (sum_of_max_two a b c)
+        (if (< a b) 
+            (if (< a c) 
+                (+ b c)
+                (+ a b))
+            (if (< b c)
+                (+ a c)
+                (+ a b))))
+
+(sum_of_max_two 1 2 3)
